@@ -11,11 +11,17 @@
     position: relative;
 }
 
-.header {
-    display: block;
+.main {
+    display: flex;
 }
 
-.header__title {
+.main__description {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.description__title {
     padding-top: 129px;
     padding-left: 103px;
     color: #fff;
@@ -23,7 +29,7 @@
     line-height: 67px;
 }
 
-.header__subtitle {
+.description__subtitle {
     padding-top: 8px;
     padding-left: 103px;
     font-size: 19px;
@@ -31,24 +37,17 @@
     color: #fff;
 }
 
-.main {
-     display: flex;
-}
-
 .main__levels {
     display: flex;
     flex-direction: column;
+    width: 65%;
     padding-left: 103px;
     padding-top: 60px;
 }
 
 .level {
     border: none;
-
-}
-
-.level_active {
-
+    width: 50%;
 }
 
 .level-input {
@@ -60,6 +59,7 @@
     padding-bottom: 24px;
     padding-left: 24px;
     font-family: Oswald, serif;
+    outline: none;
 }
 
 .level-input:hover {
@@ -67,11 +67,17 @@
     opacity: 0.8;
 }
 
-.level-input:before {
+.level:visited::before,
+.level:hover::before,
+.level:active::before,
+.level_active:before{
     content: "";
-    width: 18px;
-    height: 18px;
-    background: url("./img/Rectangle.png");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-bottom: 4px;
+    transform: rotate(45deg);
+    background-color: #d62b2e;
 }
 
 .start-button {
@@ -87,15 +93,107 @@
     outline: none;
 }
 
+.start-button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.main__image {
+    /*position: relative;*/
+    width: 35%;
+}
+
 .main__image1 {
     position: absolute;
-    padding-top: 7%;
-    padding-left: 30%;
+    padding-top: 20%;
 }
 
 .main__image2 {
     position: absolute;
-    padding-top: 7%;
-    padding-left: 39%;
+    padding-top: 20%;
+    padding-left: 7%;
 }
 
+.card-wrapper {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    height: 341px;
+    width: 218px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card-wrapper_hover:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    transform: rotate(-3.08deg) translateY(-15px);
+    transition: 0.4s ease;
+}
+
+.card-back {
+    background: url(./img/card_back.png) no-repeat;
+    backface-visibility: hidden;
+    height: 341px;
+    width: 218px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-gameover {
+    background: url(./img/card_gameover.png) no-repeat;
+    backface-visibility: hidden;
+    height: 341px;
+    width: 218px;
+    position:absolute;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.card-bug {
+    background: url(./img/card_bug.png) no-repeat;
+    backface-visibility: hidden;
+    height: 341px;
+    width: 218px;
+    position:absolute;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.card-click {
+    transform: rotateY(180deg);
+}
+
+.three-card-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 702px;
+    height: 706px;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.six-card-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 702px;
+    height: 750px;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.ten-card-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 750px;
+    width: 1186px;
+    margin: auto;
+    perspective: 1000px;
+}

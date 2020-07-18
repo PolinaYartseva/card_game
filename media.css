@@ -1,0 +1,127 @@
+@media (max-width: 1440px) {
+    .description__title {
+        font-size: 50px;
+        line-height: 67px;
+    }
+    .description__subtitle {
+        font-size: 19px;
+        line-height: 22px
+    }
+    .main__levels,
+     .description__title,
+     .description__subtitle {
+         padding-left: 80px;
+    }
+    .level-input {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .start-button {
+        width: 300px;
+        height: 70px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .main__image1,
+    .main__image2 {
+        height: 100%;
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .description__title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .description__subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .main__levels,
+    .description__title,
+    .description__subtitle {
+        padding-left: 60px;
+    }
+    .level-input {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .start-button {
+        width: 300px;
+        height: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main__image1,
+    .main__image2 {
+        height: 100%;
+        padding-top: 25%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .container {
+        background: url(./img/Background.png) fixed;
+    }
+    .main__levels,
+    .main__description {
+        width: 100%;
+    }
+    .main__levels,
+    .description__title,
+    .description__subtitle {
+        padding-left: 60px;
+    }
+    .description__title {
+        padding-top: 60px;
+    }
+    .main__image {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .main__levels,
+    .description__title,
+    .description__subtitle {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .description__title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .description__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .level-input {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .description__title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .description__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .level-input {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 15px;
+    }
+    .start-button {
+        width: 200px;
+        height: 60px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+}
