@@ -58,12 +58,15 @@
         height: 100%;
         padding-top: 25%;
     }
+    .ten-card-game {
+        margin: 0 auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 1040px) {
-    .container {
-        background: url(./img/Background.png) fixed;
-    }
     .main__levels,
     .main__description {
         width: 100%;
@@ -103,7 +106,6 @@
 }
 
 @media (max-width: 420px) {
-
     .description__title {
         font-size: 35px;
         line-height: 40px;

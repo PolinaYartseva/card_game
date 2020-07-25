@@ -6,9 +6,9 @@
 
 .container {
     background: url(./img/Background.png) no-repeat;
-    background-size: cover;
     font-family: Oswald, serif;
     position: relative;
+    margin: 0 auto;
 }
 
 .main {
@@ -192,8 +192,8 @@
     align-items: center;
     align-content: space-around;
     flex-wrap: wrap;
-    height: 750px;
+    height: 702px;
     width: 1186px;
     margin: auto;
-    perspective: 1000px;
+    /*perspective: 1000px;*/
 }
