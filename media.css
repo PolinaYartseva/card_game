@@ -67,18 +67,29 @@
 }
 
 @media (max-width: 1040px) {
+    .main {
+        align-items: center;
+        height: 100vh;
+    }
     .main__levels,
     .main__description {
         width: 100%;
+        align-items: center;
     }
     .main__levels,
-    .description__title,
     .description__subtitle {
         padding-left: 60px;
     }
-    .description__title {
-        padding-top: 60px;
+    .level {
+        text-align: center;
     }
+    .level-input {
+        text-align: center;
+        padding-left: 0;
+    }
+    .description__title {
+        padding-top: 0;
+        padding-left: 0;
     .main__image {
         display: none;
     }
@@ -102,6 +113,14 @@
     .level-input {
         font-size: 30px;
         line-height: 40px;
+    }
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before{
+        width: 12px;
+        height: 12px;
+        top: 25%;
     }
 }
 

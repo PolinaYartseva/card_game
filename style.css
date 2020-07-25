@@ -6,6 +6,7 @@
 
 .container {
     background: url(./img/Background.png) no-repeat;
+    background-size: auto;
     font-family: Oswald, serif;
     position: relative;
     margin: 0 auto;
@@ -48,6 +49,7 @@
 .level {
     border: none;
     width: 50%;
+    position: relative;
 }
 
 .level-input {
@@ -57,7 +59,7 @@
     line-height: 59px;
     color: #fff;
     padding-bottom: 24px;
-    padding-left: 24px;
+    padding-left: 30px;
     font-family: Oswald, serif;
     outline: none;
 }
@@ -78,6 +80,8 @@
     margin-bottom: 4px;
     transform: rotate(45deg);
     background-color: #d62b2e;
+    position: absolute;
+    top: 30%;
 }
 
 .start-button {
@@ -99,7 +103,7 @@
 }
 
 .main__image {
-    /*position: relative;*/
+    display: block;
     width: 35%;
 }
 
