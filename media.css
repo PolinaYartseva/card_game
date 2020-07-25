@@ -26,7 +26,6 @@
     .main__image2 {
         height: 100%;
     }
-
 }
 
 @media (max-width: 1250px) {
@@ -67,6 +66,9 @@
 }
 
 @media (max-width: 1040px) {
+    .container {
+        background-size: auto;
+    }
     .main {
         align-items: center;
         height: 100vh;
@@ -74,11 +76,15 @@
     .main__levels,
     .main__description {
         width: 100%;
+        justify-content: center;
         align-items: center;
     }
     .main__levels,
     .description__subtitle {
-        padding-left: 60px;
+        padding-left: 0;
+    }
+    .main__image {
+        display: none;
     }
     .level {
         text-align: center;
@@ -87,11 +93,40 @@
         text-align: center;
         padding-left: 0;
     }
-    .description__title {
-        padding-top: 0;
+    .description__title,
+    .description__subtitle {
+        text-align: center;
+        padding-top: 8px;
         padding-left: 0;
-    .main__image {
-        display: none;
+    }
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        width: 12px;
+        height: 12px;
+        top: 25%;
+        left: 27%;
+    }
+}
+
+@media (max-width: 880px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        top: 25%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 800px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        top: 25%;
+        left: 20%;
     }
 }
 
@@ -117,10 +152,37 @@
     .level:visited::before,
     .level:hover::before,
     .level:active::before,
-    .level_active:before{
+    .level_active:before {
         width: 12px;
         height: 12px;
-        top: 25%;
+        left: 18%;
+    }
+}
+
+@media (max-width: 600px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: 15%;
+    }
+}
+
+@media (max-width: 530px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: 5%;
     }
 }
 
@@ -144,5 +206,11 @@
         font-size: 25px;
         line-height: 30px;
         margin-top: 25px;
+    }
+    .level:visited::before,
+    .level:hover::before,
+    .level:active::before,
+    .level_active:before {
+        left: -5%;
     }
 }
